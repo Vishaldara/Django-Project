@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'blog_prj',
     'django.contrib.sites',
     'disqus',
+    'django_forms_bootstrap',
 
 ]
 
@@ -58,6 +59,9 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'blog_prj.urls'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
 TEMPLATES = [
     {
